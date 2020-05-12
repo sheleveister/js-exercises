@@ -10,6 +10,10 @@ Person.prototype = {
   }
 };
 
+// Person.prototype.getName = function () {
+//   return this.name;
+// };
+
 const pedro = new Person('Pedro');
 // const juan = new Person('Juan');
 
