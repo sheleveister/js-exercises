@@ -11,6 +11,34 @@
       font-weight: bold;
       border: 1px solid red;
     }
+
+    .block {
+      display: flex;
+      background: aqua;
+      flex-direction: column;
+      height: 300px;
+      flex-wrap: wrap;
+    }
+
+    .block > div {
+      border: 1px solid;
+    }
+
+    .elem {
+      flex-basis: 100px;
+      margin: 10px;
+    }
+
+    .content {
+      background: aquamarine;
+      display: inline-block;
+      width: 100px;
+      height: 200px;
+      padding: 10px;
+      box-sizing: border-box;
+      margin: 20px;
+    }
+
   </style>
 </head>
 <body>
@@ -38,6 +66,20 @@
       <input type="text" id="input">
     </div>
   </div>
+
+  <div class="block">
+    <div class="elem">1</div>
+    <div class="elem">2</div>
+    <div class="elem">3</div>
+    <div class="elem">4</div>
+    <div class="elem">5</div>
+  </div>
+
+  <div class="content">1</div>
+  <div class="content">2</div>
+  <div class="content">3</div>
+  <div class="content">4</div>
+
   <script src="./treeWalking.js"></script>
   <script src="./debounce.js"></script>
 </body>
